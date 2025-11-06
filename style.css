@@ -306,3 +306,11 @@ button:hover {
 #checkoutBtn:hover {
   background-color: #1da955;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+
