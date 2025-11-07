@@ -305,6 +305,70 @@ button:hover {
 
 #checkoutBtn:hover {
   background-color: #1da955;
+    .product-card{
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image{ position: relative; }
+.product-image img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* selo esgotado */
+.sold-out-badge{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.85);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  z-index: 10;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* overlay visual para indicar indisponibilidade */
+.sold-out-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* estilo do botão desabilitado */
+.product-card.sold-out .add-to-cart{
+  background: #bbb;
+  border-color: #aaa;
+  color: #666;
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* responsividade simples */
+@media (max-width: 600px){
+  .product-card{ max-width: 100%; }
+  .sold-out-badge{ font-size: 12px; padding: 5px 8px; }
+}
 }
 html, body {
   width: 100%;
@@ -312,6 +376,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 
 
 
