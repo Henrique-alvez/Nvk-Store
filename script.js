@@ -61,11 +61,12 @@ function checkout() {
     return;
   }
 
-  const phone = "5511942718355"; // Seu número do WhatsApp (com DDI)
+  const phone = "5535999673781"; // Seu número do WhatsApp (com DDI)
   const items = cart.map(item => `${item.product} - R$ ${item.price.toFixed(2)}`).join("\n");
   const total = cart.reduce((sum, item) => sum + item.price, 0);
   const message = `🛍️ *Pedido Store NVK*%0A%0A${items}%0A%0A*Total:* R$ ${total.toFixed(2)}`;
 
-  const url = `https://wa.me/${5511942718355}?text=${message}`;
+  const url = `https://wa.me/${5535999673781}?text=${message}`;
   window.open(url, "_blank");
 }
+
