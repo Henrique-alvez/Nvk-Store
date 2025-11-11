@@ -147,7 +147,7 @@ section h2 {
 }
 
 .produto h3 {
-    color: #f0f4f5;
+    color: #0400ff;
     font-size: 20px;
     margin-bottom: 8px;
 }
@@ -214,7 +214,7 @@ footer p {
 
 button {
   background-color: #0400ff;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   border: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -312,6 +312,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
+
+
+
+
 
 
 
