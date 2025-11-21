@@ -69,4 +69,27 @@ function checkout() {
   const url = `https://wa.me/${5535999673781}?text=${message}`;
   window.open(url, "_blank");
 }
+// Filtro igual ao site NewWave
+const botoes = document.querySelectorAll(".cat-btn");
+const produtos = document.querySelectorAll(".produto");
 
+botoes.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        // remove active dos outros
+        botoes.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filtro = btn.getAttribute("data-filter");
+
+        produtos.forEach(prod => {
+            const categoria = prod.getAttribute("data-category");
+
+            if (filtro === "all" || categoria === filtro) {
+                prod.style.display = "block";
+            } else {
+                prod.style.display = "none";
+            }
+        });
+    });
+});
