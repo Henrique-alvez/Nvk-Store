@@ -312,14 +312,29 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.categorias {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
 
+.cat-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: #3712e0b2;
+    transition: 0.3s;
+}
 
+.cat-btn.active {
+    background: black;
+    color: blue;
+}
 
-
-
-
-
-
-
-
-
+.cat-btn:hover {
+    transform: scale(1.05);
+}
